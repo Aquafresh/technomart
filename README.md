@@ -1,2 +1,2 @@
 # techomart
-http://aquafresh.github.io/techomart/
+http://aquafresh.github.io/technomart/
