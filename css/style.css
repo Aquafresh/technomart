@@ -1,7 +1,325 @@
 body {
-	background-color: red;
+	padding: 0;
+	margin: 0;
 }
-.qwe {
+.wrapper{
+	font-size: 17px;
+	font-family: "Cuprum", "Times New Roman";
+	font-weight: normal;
 	color:#000;
+}
+h1 {
 	font-size: 30px;
+	font-family: "Cuprum", "Times New Roman";
+	font-weight: normal;
+	color: #32425c;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: "Cuprum", "Times New Roman";
+	font-weight: normal;
+	color: #32425c;
+}
+
+h3 {
+	font-size: 30px;
+	font-family: "Cuprum", "Times New Roman";
+	font-weight: normal;
+	color: #000;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top-wrap {
+	background-color: #293449;
+}
+
+.bottom-wrap {
+	background-color: #f1f5f7;
+}
+
+/*main-header-start*/
+/*top-wrap-start*/
+.left-side {
+	width: 490px;
+	float: left;
+}
+
+.right-side {
+	float: right;
+	width: 450px;
+}
+
+.top-wrap:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo {
+	text-decoration: none;
+	background-color: #ee3643;
+	font-size: 24px;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 26px;
+	text-align: center;
+	padding: 8px 55px;
+	float: left;
+	box-shadow: 0 5px 0px 0px #b52933;
+}
+
+.logo:hover {
+	background-color: #ca2c37;
+	box-shadow: 0 5px 0px 0px #9a212a;
+}
+
+.logo:active {
+	background-color: #ba2732;
+	box-shadow: 0 5px 0px 0px #8e1e26;
+}
+
+.submit {
+	float: left;
+	border: 0;
+	padding: 10.5px;
+	background-color: #293449;
+}
+
+.icon-search{
+	color: #6a7180;
+	font-size: 18px;
+	cursor: pointer;
+	outline:none;
+}
+
+.search-area {
+	float: right;
+	border: 0;
+	background-color: #293449;
+	padding-top:11px;
+	padding-bottom: 11.5px;
+	padding-right: 73px;
+	color: #000;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	outline:none;
+}
+
+.search-area:focus {
+	background-color: #fff;
+}
+
+.submit:focus {
+	background-color: #fff;
+	color: #ee3643;
+}
+
+.bookmark{
+	float:left;
+	padding: 10.5px 0px;
+	display: inline-block;
+	background-color: #293449;
+	position: relative;
+}
+
+.bookmark-text{
+	text-decoration: none;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #fff;
+	padding: 12px 37px 12px 37px;
+	background-color: #293449;
+}
+
+.icon-bookmark {
+	color: #6a7180;
+	position: absolute;
+	left: 7px;
+}
+
+.bookmark-counter {
+	position: absolute;
+	color: #fff;
+	top: 11px;
+	right: 20px;
+}
+
+.shop-cart{
+	float: left;
+	padding: 10.5px 0px;
+	position: relative;
+}
+
+.shop-cart-text {
+	text-decoration: none;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #fff;
+	padding: 12px 51px 12px 51px;
+	background-color: #293449;
+	text-align: right;
+}
+
+.icon-basket {
+	color: #6a7180;
+	position: absolute;
+	left: 15px;
+}
+
+.shop-cart-counter {
+	position: absolute;
+	color: #fff;
+	top: 11px;
+	right: 35px;
+}
+
+.write-up {
+	float: right;
+	text-decoration: none;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #fff;
+	padding: 11.5px 21px;
+	background-color: #63a63e;
+}
+
+.write-up:hover {
+	background-color: #5fbb2d;
+}
+
+.write-up:active {
+	background-color: #518534;
+	color: #a4bf94;
+}
+
+.search-area:hover,
+.submit:hover,
+.shop-cart>a:hover,
+.bookmark>a:hover{
+	background-color: #212a3a;
+}
+
+.shop-cart>a:active,
+.bookmark>a:active{
+	background-color: #161d29;
+	color: #a2a5a9;
+}
+
+/*top-wrap-end*/
+
+/*bottom-wrap-start*/
+
+.info-menu>p {
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	font-size: 16px;
+	color: #ee434f;
+	line-height: 23px;
+	margin-left: 47px;
+	width: 195px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 46px;
+	margin-right: 75px;
+}
+
+.contact-info {
+	width: 268px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-top: 46px;
+	margin-right: 67px;
+}
+
+.contact-info>.phone {
+	color: #e9292a;
+	text-align: center;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 17px;
+	border: 3px solid #fff;
+	padding: 10px 0;
+}
+
+.icon-phone {
+	position: absolute;
+	color: #b7bfc8;
+	top: 12px ;
+	left: 50px;
+}
+
+.contact-info>.address {
+	color: #4b5a71;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 10px 0px 10px 10px;
+}
+
+.user-block {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 46px;
+	position: relative;
+}
+
+.enter {
+	width: 91px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 18px;
+	padding: 13.5px 30px 13.5px 0;
+	display: inline-block;
+	text-align: right;
+	margin-right: 4px;
+}
+
+.icon-login {
+	position: absolute;
+	top:8px;
+	left: 5px;
+	font-size: 20px;
+	color: #c5c5c5;
+}
+.sign-up {
+	width: 150px;
+	background-color: #fff;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 18px;
+	padding: 13.5px 0 13.5px 0;
+	display: inline-block;
+	text-align: center;
 }
