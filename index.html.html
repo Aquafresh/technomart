@@ -2,29 +2,28 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="discription" content="Описание сайта">
+	<meta name="description" content="Описание сайта">
 	<meta name="keywords" content="Ключенивые слова">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="symbols-technomart/css/symbols-technomart-embedded.css">
+	<link href="style-shop.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italicsubset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<title class="caption-name">Technomart-index</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="main-header">
-			<div class="top-wrap">
+			<div class="header-top-block">
 				<div class="container">
 					<div class="tool-menu">
-						<div class="left-side">
+						<div class="tool-left-side">
 							<a class="logo" href="#">Техномарт</a>
 							<form action="#" method="get" name="search">
 								<input class="search-area" type="text" name="search-area" placeholder="Поиск:">
 								<button class="submit icon-search" type="submit" value="" name="submit"></button>
 							</form>
 						</div>
-						<div class="right-side">
+						<div class="tool-right-side">
 							<a class="bookmark" href="#">
-								<i class="icon-bookmark" href="#"></i>
+								<i class="icon-bookmark"></i>
 								<span class="bookmark-text">Закладки:</span>
 								<span class="bookmark-counter">0</span>
 							</a>
@@ -38,17 +37,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="bottom-wrap">
+			<div class="header-bottom-block">
 				<div class="container">
 					<div class="info-menu">
-						<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+						<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 						<div class="contact-info">
 							<i class="icon-phone"></i>
-							<p class="phone">+7(812)555-05-55</p>
-							<p class="address">г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8</p>
+							<p class="phone">+7 (812) 555-05-55</p>
+							<p class="address">г.Санкт-Петербург,ул. Б.Конюшенная,д.19/8</p>
 						</div>
 						<div class="user-block">
-							<i class="icon-login"></i>
 							<a class="enter" href="#">Войти</a>
 							<a class="sign-up" href="#">Регистрация</a>
 						</div>
@@ -59,7 +57,7 @@
 								<a href="#">Главная</a>
 							</li>
 							<li class="nav-bar">
-								<a href="#">Комания</a>
+								<a href="#">Компания</a>
 							</li>
 							<li class="nav-bar">
 								<a href="#">Каталог</a>
@@ -95,19 +93,19 @@
 					<p>Техника</p>
 					<a href="#">Для стройки</a>
 				</div>
-				<div class="js-carousel">
+				<div class="carousel">
 					<div class="js-carousel-liner">
 						<div class="carousel-item active">
 							<h2>Дрели</h2>
 							<p>Соседям на радость!</p>
 							<a class="catalog-btn" href="#">Открыть каталог</a>
-							<img class="carousel-img" src="img/slider-image1.jpg" width="620" height="266" alt="Not found">
+							<img class="carousel-img" src="image/slaider-image1.jpg" width="620" height="266" alt="Not found">
 						</div>
 						<div class="carousel-item">
 							<h2>Перфораторы</h2>
 							<p>Настоящие мужские игрушки!</p>
 							<a class="catalog-btn" href="#">Открыть каталог</a>
-							<img class="carousel-img" src="img/slider-image2.jpg" width="620" height="266" alt="Not found">
+							<img class="carousel-img" src="image/slaider-image2.jpg" width="620" height="266" alt="Not found">
 						</div>
 					</div>
 				</div>
@@ -120,15 +118,15 @@
 					<a href="#">Бесплатно</a>
 				</div>
 			</section>
-			<section class="popular-goods-block">
-				<header class="header-goods">
+			<section class="popular-block">
+				<header class="popular-block-header">
 					<h2>Популярные товары:</h2>
-					<a href="#">Все популярные товары</a>
+					<a class="all-popular-thing" href="#">Все популярные товары</a>
 				</header>
-				<div class="popular-goods-bars">
+				<div class="popular-goods-block">
 					<article class="item">
 						<div class="img-container">
-							<img src="img/aticle-item1-image.jpg" width="184" height="164" alt="Not found">
+							<img src="image/aticle-item1-image.jpg" width="218" height="164" alt="Not found">
 						</div>
 						<div class="action-btn">
 							<a class="btn buy" href="#">Купить</a>
@@ -136,11 +134,11 @@
 						</div>
 						<p class="item-name">Перфоратор Bosch BFG 9000</p>
 						<p class="item-old-price">32 500 P.</p>
-						<a href="#">25 500 P.</a>
+						<p class="item-new-price">25 500 P.</p>
 					</article>
 					<article class="item">
 						<div class="img-container">
-							<img src="img/aticle-item1-image.jpg" width="184" height="164" alt="Not found">
+							<img src="image/aticle-item2-image.jpg" width="218" height="164" alt="Not found">
 						</div>
 						<div class="action-btn">
 							<a class="btn buy" href="#">Купить</a>
@@ -148,11 +146,11 @@
 						</div>
 						<p class="item-name">Перфоратор Bosch BFG 9000</p>
 						<p class="item-old-price">32 500 P.</p>
-						<a href="#">25 500 P.</a>
+						<p class="item-new-price">25 500 P.<p>
 					</article>
 					<article class="item">
 						<div class="img-container">
-							<img src="img/aticle-item2-image.jpg" width="184" height="164" alt="Not found">
+							<img src="image/aticle-item3-image.jpg" width="218" height="164" alt="Not found">
 						</div>
 						<div class="action-btn">
 							<a class="btn buy" href="#">Купить</a>
@@ -160,132 +158,130 @@
 						</div>
 						<p class="item-name">Перфоратор Bosch BFG 9000</p>
 						<p class="item-old-price">32 500 P.</p>
-						<a href="#">25 500 P.</a>
+						<p class="item-new-price">25 500 P.</p>
 					</article>
 					<article class="item new-strip">
 						<div class="img-container">
-							<img src="img/aticle-item2-image.jpg" width="184" height="164" alt="Not found">
+							<img src="image/aticle-item4-image.jpg" width="218" height="164" alt="Not found">
 						</div>
 						<div class="action-btn">
 							<a class="btn buy" href="#">Купить</a>
 							<a class="btn to-bookmark" href="#">В закладки</a>
 						</div>
 						<p class="item-name">Перфоратор Bosch BFG 9000</p>
-						<p class="item-old-price">32 500 P.</p>
-						<a href="#">25 500 P.</a>
+						<p class="item-old-price"></p>
+						<p class="item-new-price">25 500 P.</p>
 					</article>
 				</div>
 			</section>
-			<section class="popular-brands-block">
-				<header class="header-brands">
+			<section class="popular-block">
+				<header class="popular-block-header">
 					<h2>Популярные производители:</h2>
-					<a href="#">Все производители</a>
+					<a class="all-popular-thing" href="#">Все производители</a>
 				</header>
-				<div class="brands">
-					<div class="top-brands-block">
-						<a class="brand-item" href="#">
-							<img src="img/brand-img1.jpg" width="126" height="34" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img2.jpg" width="123" height="39" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img3.jpg" width="144" height="42" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img4.jpg" width="199" height="88" alt="Not found">
-						</a>
-					</div>
-					<div class="bottom-brands-block">
-						<a class="brand-item" href="#">
-							<img src="img/brand-img5.jpg" width="164" height="31" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img6.jpg" width="121" height="73" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img7.jpg" width="149" height="96" alt="Not found">
-						</a>
-						<a class="brand-item" href="#">
-							<img src="img/brand-img8.jpg" width="204" height="68" alt="Not found">
-						</a>
-					</div>
+				<div class="popular-brands-block">
+					<a class="brand-item" href="#">
+						<img src="image/brand-img1.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img2.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img3.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img4.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img5.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img6.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img7.jpg" width="218" height="143" alt="Not found">
+					</a>
+					<a class="brand-item" href="#">
+						<img src="image/brand-img8.jpg" width="218" height="143" alt="Not found">
+					</a>
 				</div>
 			</section>
-			<section class="services-block">
-				<h3>Сервисы</h3>
-				<p>Хороший интернет-магазин отличаеться от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+		</div>
+		<section class="services-block">
+			<div class="container">
+				<h3 class="services-caption">Сервисы</h3>
+				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<div class="tabs">
 					<div class="tabs-switch">
 						<ul>
-							<li class="active">
+							<li class="tabs-btn active">
 								<a href="#">Доставка</a>
 							</li>
-							<li>
+							<li class="tabs-btn">
 								<a href="#">Гарантия</a>
 							</li>
-							<li>
+							<li class="tabs-btn">
 								<a href="#">Кредит</a>
 							</li>
 						</ul>
 					</div>
 					<div class="tabs-info">
 						<ul>
-							<li class="tab-delivery active">
+							<li class="tab-list tab-delivery active">
 								<h2>Доставка</h2>
 								<p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-								<a href="#">Отправить заявку</a>
 							</li>
-							<li class="tab-garanty">
+							<li class="tab-list tab-garanty">
 								<h2>Гарантия</h2>
 								<p>Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгаранием,<br>
 								вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший товар на новый.<br>Дом уж восстановите как-нибуть сами.</p>
-								<a href="#">Отправить заявку</a>
 							</li>
-							<li class="tab-credit">
+							<li class="tab-list tab-credit">
 								<h2>Кредит</h2>
 								<p>Залезть в долговую яму стало проще!<br>Кредитные консультанты вам на помощь.</p>
-								<a href="#">Отправить заявку</a>
+								<a class="credit-request" href="#">Отправить заявку</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-			</section>
-			<div class="companes-map-block clearfix">
+			</div>
+		</section>
+		<div class="container">
+			<div class="companies-map-block">
 				<div class="company-info">
 					<h3>Компания &laquo;Техномарт&raquo;</h3>
-					<p>Настоящий шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдельные точки России! Техномарт работает со многими транспортными команиями:</p>
-					<ul>
+					<p>Настоящий шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+					<p>Мы можем доставить ваш товар в самые отдельные точки России!<br> Техномарт работает со многими транспортными команиями:</p>
+					<ul class="list-company">
 						<li>Деловые линии</li>
-						<li>Авттотрейдигш</li>
+						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a href="#">Подробнее о комании</a>
+					<a class="company-details" href="#">Подробнее о комании</a>
 				</div>
 				<div class="contact">
 					<h3>Контакты</h3>
-					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+					<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
 					<a class="map-img" href="#">
-						<img src="img/small-map.jpg" width="300" height="158" alt="Not found">
+						<img src="image/small-map.jpg" width="300" height="158" alt="Not found">
 					</a>
 					<div class="map-wide-img">
-						<img src="img/wide-map.jpg" width="940" height="446" alt="Not found">
 						<a href="#">X</a>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2564.316288594053!2d36.22976327245891!3d50.00542669970854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1429714931056" width="940" height="447" frameborder="0" style="border:0"></iframe>
 					</div>
-					<a class="found-btn" href="#">Заблудились? Напишите нам!</a>
+					<a class="found-us-btn" href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</div>
 		<footer class="main-footer">
-			<div class="container">
-				<div class="top-footer">
-					<div class="right-block">
-						<a class="logo" href="#">Техномарт</a>
-						<p>Адрес:г.Санкт-Петербург,ул.Б.Конюшенная,д.19/8<br>
-						+7(812)555-05-55</p>
-					</div>
+			<div class="top-footer">
+				<div class="container">
 					<div class="left-block">
+						<a class="logo" href="#">Техномарт</a>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55</p>
+					</div>
+					<div class="right-block">
 						<ul class="first-nav-bar">
 							<li>
 								<a href="#">Компания</a>
@@ -319,51 +315,57 @@
 						</ul>
 					</div>
 				</div>
-				<div class="bottom-footer">
-					<p>&#x00A9;2010-2015 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
-					<div class="social-btns">
+			</div>
+			<div class="bottom-footer">
+				<div class="container">
+					<p class="copyright">&#x00A9;2010-2015 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
+					<div class="social-btns-block">
 						<ul>
-							<li>
-								<a href="http://vk.com">vk</a>
+							<li class="social-btn">
+								<a class="icon-vk" href="http://vk.com"></a>
 							</li>
-							<li>
-								<a href="http://facebook.com">facebook</a>
+							<li class="social-btn">
+								<a class="icon-facebook" href="http://facebook.com"></a>
 							</li>
-							<li>
-								<a href="http://instagram.com">instagram</a>
+							<li class="social-btn">
+								<a class="icon-instagramm" href="http://instagram.com"></a>
 							</li>
 						</ul>
 					</div>
-					<div class="feed-back">
-						<p>Обратная связь:</p>
-						<a href="mailto:https://htmlacademy.ru">mail@htmlacademy.ru</a>
-					</div>
-					<div class="develop">
-						<p>Разработано -</p>
-						<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+					<div class="contact-wrap">
+						<div class="feed-back">
+							<p>Обратная связь:</p>
+							<a href="mailto:https://htmlacademy.ru">mail@htmlacademy.ru</a>
+						</div>
+						<div class="develop">
+							<p>Разработано -</p>
+							<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
 	<div class="write-us">
-	<a class="exit" href="#">X</a>
-	<form>
-		<div class="form-group-name">
-			<label for="user-name"></label>
-			<input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
-		</div>
-		<div class="form-group-email">
-			<label for="user-email"></label>
-			<input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
-		</div>
-		<div class="form-group-comment">
-			<label for="user-comment"></label>
-			<textarea name="user-comment" id="user-comment" placeholder="В свободной форме"></textarea>
-		</div>
-		<input type="submit" name="submit" value="Отправить">
-		<input type="reset" name="reset" value="Отмена">
-	</form>
-</div>
+		<a class="exit" href="#"></a>
+		<form action="#" method="get" name="contact-form">
+			<div class="form-group-name">
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
+			</div>
+			<div class="form-group-email">
+				<label for="user-email">Ваш e-mail:</label>
+				<input type="email" name="user-email" id="user-email" placeholder="Для отправки ответа">
+			</div>
+			<div class="form-group-comment">
+				<label for="user-comment">Текст письма:</label>
+				<textarea name="user-comment" id="user-comment" placeholder="В свободной форме" ></textarea>
+			</div>
+			<div class="form-btn">
+				<input type="submit" name="submit" value="Отправить">
+				<input type="reset" name="reset" value="Отмена">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
