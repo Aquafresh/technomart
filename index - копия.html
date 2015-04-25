@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Описание сайта">
 	<meta name="keywords" content="Ключенивые слова">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/symbols-technomart-embedded.css">
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italicsubset=cyrillic,latin' rel='stylesheet'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italicsubset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title class="caption-name">Technomart-index</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 					<div class="tool-menu">
 						<div class="tool-left-side">
 							<a class="logo" href="#">Техномарт</a>
-							<form action="#" method="get" name="search">
+							<form class="search-header-form" action="#" method="get" name="search">
 								<input class="search-area" type="text" name="search-area" placeholder="Поиск:">
 								<button class="submit icon-search" type="submit" value="" name="submit"></button>
 							</form>
@@ -34,7 +34,7 @@
 								<span class="shop-cart-text">Корзина:</span>
 								<span class="shop-cart-counter">0</span>
 							</a>
-							<span class="write-up">Оформить заказ</span>
+							<a class="write-up" href="#">Оформить заказ</a>
 						</div>
 					</div>
 				</div>
@@ -83,47 +83,47 @@
 		</header>
 		<div class="container">
 			<section class="section-bars-offers">
-				<div class="bar stuff new-strip">
+				<div class="bar bar-stuff new-strip">
 					<p>Материалы</p>
-					<a href="#">На любой вкус</a>
+					<a class="btn btn-transparent" href="#">На любой вкус</a>
 				</div>
-				<div class="bar tool">
+				<div class="bar bar-tool">
 					<p>Инструменты</p>
-					<a href="#">На все случаи</a>
+					<a class="btn btn-transparent" href="#">На все случаи</a>
 				</div>
-				<div class="bar tech">
+				<div class="bar bar-tech">
 					<p>Техника</p>
-					<a href="#">Для стройки</a>
+					<a class="btn btn-transparent" href="#">Для стройки</a>
 				</div>
 				<div class="carousel">
-					<div class="js-carousel-liner">
+					<div class="owl-carousel">
 						<div class="carousel-item active">
 							<h2>Дрели</h2>
 							<p>Соседям на радость!</p>
-							<a class="catalog-btn" href="#">Открыть каталог</a>
+							<a class="btn btn-red btn-small" href="#">Открыть каталог</a>
 							<img class="carousel-img" src="image/slaider-image1.jpg" width="620" height="266" alt="Not found">
 						</div>
 						<div class="carousel-item">
 							<h2>Перфораторы</h2>
 							<p>Настоящие мужские игрушки!</p>
-							<a class="catalog-btn" href="#">Открыть каталог</a>
+							<a class="btn btn-red btn-small" href="#">Открыть каталог</a>
 							<img class="carousel-img" src="image/slaider-image2.jpg" width="620" height="266" alt="Not found">
 						</div>
 					</div>
 				</div>
-				<div class="bar discount">
+				<div class="bar bar-discount">
 					<p>Скидки 50%</p>
-					<a href="#">На 350 товаров</a>
+					<a class="btn btn-transparent" href="#">На 350 товаров</a>
 				</div>
-				<div class="bar delivery">
+				<div class="bar bar-delivery">
 					<p>Доставка</p>
-					<a href="#">Бесплатно</a>
+					<a class="btn btn-transparent" href="#">Бесплатно</a>
 				</div>
 			</section>
 			<section class="popular-block">
 				<header class="popular-block-header">
 					<h2>Популярные товары:</h2>
-					<a class="all-popular-thing" href="#">Все популярные товары</a>
+					<a class="btn btn-red btn-wide" href="#">Все популярные товары</a>
 				</header>
 				<div class="popular-goods-block">
 					<article class="item">
@@ -179,7 +179,7 @@
 			<section class="popular-block">
 				<header class="popular-block-header">
 					<h2>Популярные производители:</h2>
-					<a class="all-popular-thing" href="#">Все производители</a>
+					<a class="btn btn-red btn-wide" href="#">Все производители</a>
 				</header>
 				<div class="popular-brands-block">
 					<a class="brand-item" href="#">
@@ -259,19 +259,15 @@
 						<li>Автотрейдинг</li>
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
-					<a class="company-details" href="#">Подробнее о комании</a>
+					<a class="btn btn-red btn-normal" href="#">Подробнее о комании</a>
 				</div>
 				<div class="contact">
 					<h3>Контакты</h3>
 					<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
 					<a class="map-img" href="#">
-						<img src="image/small-map.jpg" width="300" height="158" alt="Not found">
+						<img class="small-map" src="image/small-map.jpg" width="300" height="158" alt="Not found">
 					</a>
-					<div class="map-wide-img">
-						<a href="#"></a>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2564.316288594053!2d36.22976327245891!3d50.00542669970854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1429714931056" width="940" height="447"></iframe>
-					</div>
-					<a class="found-us-btn" href="#">Заблудились? Напишите нам!</a>
+					<a class="btn btn-red btn-popup" href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</div>
@@ -348,9 +344,13 @@
 			</div>
 		</footer>
 	</div>
-	<div class="write-us">
-		<a class="exit" href="#"></a>
-		<form action="#" method="get" name="contact-form">
+	<div class="map-wide-img">
+		<a class="map-exit" href="#" title="Закрыть"></a>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2564.316288594053!2d36.22976327245891!3d50.00542669970854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1429714931056" width="940" height="447"></iframe>
+	</div>
+	<div class="write-us" style="display:block;">
+		<a class="exit" href="#" title="Закрыть"></a>
+		<form class="write-us-form" action="#" method="get" name="contact-form">
 			<div class="form-group-name">
 				<label for="user-name">Ваше имя:</label>
 				<input type="text" name="user-name" id="user-name" placeholder="Представтесь, пожалуйста">
@@ -369,5 +369,16 @@
 			</div>
 		</form>
 	</div>
+	<div class="item-confirm-block">
+		<a class="exit-confirm" href="#" title="Закрыть"></a>
+		<h2>Товар добавлен в корзину!</h2>
+		<div class="confirm-btn">
+			<a class="btn btn-red btn-normal" href="#">Оформить заказ</a>
+			<a class="btn btn-white btn-normal" href="#">Продолжить покупки</a>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/js.popup.js" type="text/javascript"></script>
 </body>
 </html>
