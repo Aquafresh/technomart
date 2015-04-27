@@ -47,7 +47,7 @@ var exit_confirm = document.querySelector(".exit-confirm");
 
   // ==================================================
 
-
-  $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+var maph = document.querySelector('.map-hidden');
+  setTimeout(function() {
+   maph.classList.remove('map-hidden');
+  }, 1000);
