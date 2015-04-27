@@ -1,3 +1,23 @@
+/*
+
+###############################
+
+main style --------------- bbc1
+header ------------------- bbc2
+header-top-block --------- bbc3
+bottom-top-block --------- bbc4
+offers ------------------- bbc5
+popular ------------------ bbc6
+services ----------------- bbc7
+companies-map ------------ bbc8
+footer ------------------- bbc9
+catalog ------------------ bbc10
+popup -------------------- bbc11
+
+##############################
+
+*/
+
 @charset 'UTF-8';
 
 @font-face {
@@ -49,7 +69,7 @@
 
     /* Font smoothing. That was taken from TWBS */
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale
 
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
@@ -137,28 +157,6 @@
     content: '🔖';
 } /* '\1f516' */
 
-
-/*
-
-
-###############################
-
-main style --------------- bbc1
-header ------------------- bbc2
-header-top-block --------- bbc3
-bottom-top-block --------- bbc4
-offers ------------------- bbc5
-popular ------------------ bbc6
-services ----------------- bbc7
-companies-map ------------ bbc8
-footer ------------------- bbc9
-catalog ------------------ bbc10
-popup -------------------- bbc11
-
-##############################
-
-*/
-
 /*
 
 $$___$__$$$$__$$$$$$_$$__$$__$$$$__$$$$$$_$$__$$_$$_____$$$$$
@@ -179,13 +177,15 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    min-width: 950px;
+    min-width: 960px;
+    font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .wrapper {
     font-size: 17px;
     font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: normal;
     color: #000;
+    overflow: hidden;
 }
 h1 {
     font-size: 30px;
@@ -309,7 +309,7 @@ ul {
     margin-right: 80px;
 }
 
-.btn-small {
+.btn-carousel {
     position: absolute;
     padding-top: 12px;
     padding-right: 45px;
@@ -351,7 +351,7 @@ ul {
 
 .confirm-btn>.btn-white {
     line-height: 18px;
-    margin-right: 80px;
+    margin-right: 78px;
 }
 
 
@@ -407,7 +407,7 @@ header-top-block START bbc3
     text-transform: uppercase;
     line-height: 28px;
     letter-spacing: 1px;
-    padding-top: 9.5px;
+    padding-top: 10px;
     padding-right: 48px;
     padding-bottom: 4px;
     padding-left: 53px;
@@ -428,14 +428,18 @@ header-top-block START bbc3
 .submit {
     float: left;
     border: 0;
-    padding: 11.5px 9px 10px 13px;
     background-color: #293449;
-    margin-left: -1px;
+    width: 45px;
+    text-align: center;
+    height: 42px;
+    box-sizing: border-box;
 }
 
 .search-header-form {
     width: 270px;
     float: right;
+    height: 42px;
+    box-sizing: border-box;
 }
 
 .icon-search {
@@ -443,19 +447,21 @@ header-top-block START bbc3
     font-size: 17px;
     cursor: pointer;
     outline: none;
+    text-align: center;
 }
 
 .search-area {
     border: 0;
     background-color: #293449;
-    padding-top: 11px;
-    padding-bottom: 11.5px;
-    padding-right: 73px;
-    color: #000;
+    width: 223px;
+    color: #fff;
     font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: normal;
     font-size: 17px;
     outline: none;
+    height: 42px;
+    box-sizing: border-box;
+    padding-right: 5px;
 }
 
 
@@ -473,9 +479,9 @@ header-top-block START bbc3
 
 .bookmark {
     float: left;
-    padding-top: 11px;
+    padding-top: 10px;
     padding-right: 30px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     padding-left: 44px;
     display: inline-block;
     background-color: #293449;
@@ -508,9 +514,9 @@ header-top-block START bbc3
 
 .shop-cart {
     float: left;
-    padding-top: 11px;
+    padding-top: 10px;
     padding-right: 42px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     padding-left: 60px;
     position: relative;
     background-color: #293449;
@@ -547,9 +553,9 @@ header-top-block START bbc3
     font-weight: normal;
     font-size: 17px;
     color: #fff;
-    padding-top: 10.5px;
     padding-right: 21px;
-    padding-bottom: 12.5px;
+    height: 42px;
+    line-height: 42px;
     padding-left: 21px;
     background-color: #63a63e;
 }
@@ -836,21 +842,19 @@ bottom-top-block START bbc4
     margin-top: 38px;
     margin-bottom: 56px;
     display: inline-block;
+    vertical-align: baseline;
 }
 
 .nav-menu>ul {
     list-style: none;
     display: table;
-    table-layout: fixed;
-    width: 100%;
 }
 
 .nav-bar {
     display: table-cell;
-    width: 100px;
+    width: 300px;
 }
-/*adding-left: 33.4px;
-    adding-right: 33.4px;*/
+
 .nav-bar>a {
     text-decoration: none;
     display: block;
@@ -860,7 +864,7 @@ bottom-top-block START bbc4
     border-bottom: 5px solid #293449;
     background-color: #32425c;
     color: #fff;
-    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-size: 17px;
     line-height: 17px;
 }
@@ -936,13 +940,14 @@ bbc5
     padding-left: 23px;
     color: #fff;
     font-size: 25px;
+    margin-right: 100px;
 }
 
 .bar-stuff {
     float: left;
     background-color: #f6b22d;
     margin-right: 20px;
-    background-image: url(../image/icon-sprait.png);
+    background-image: url(../image/icon-sprite.png);
     background-position: -1174px -13px;
     background-repeat: no-repeat;
 }
@@ -950,7 +955,7 @@ bbc5
 .bar-tool {
     float: left;
     background-color: #4aafde;
-    background-image: url(../image/icon-sprait.png);
+    background-image: url(../image/icon-sprite.png);
     background-position: 136px -10px;
     background-repeat: no-repeat;
 }
@@ -958,7 +963,7 @@ bbc5
 .bar-tech {
     float: right;
     background-color: #cc79d1;
-    background-image: url(../image/icon-sprait.png);
+    background-image: url(../image/icon-sprite.png);
     background-position: -847px -15px;
     background-repeat: no-repeat;
 }
@@ -966,7 +971,7 @@ bbc5
 .bar-discount {
     float: right;
     background-color: #85d179;
-    background-image: url(../image/icon-sprait.png);
+    background-image: url(../image/icon-sprite.png);
     background-position: -498px -21px;
     background-repeat: no-repeat;
 }
@@ -974,7 +979,7 @@ bbc5
 .bar-delivery {
     float: right;
     background-color: #f6b22d;
-    background-image: url(../image/icon-sprait.png);
+    background-image: url(../image/icon-sprite.png);
     background-position: -169px -15px;
     background-repeat: no-repeat;
 }
@@ -1085,6 +1090,7 @@ bbc6
 }
 
 .item-old-price {
+    display: block;
     color: #999;
     text-decoration: line-through;
     font-weight: bold;
@@ -1094,7 +1100,8 @@ bbc6
     font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.item-new-price {
+.item-price {
+    display: block;
     min-height: 38px;
     padding-left: 15px;
     width: 107px;
@@ -1109,9 +1116,14 @@ bbc6
     border-radius: 3px;
     font-weight: bold;
     font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 40px;
 }
 
-.item-new-price:after {
+.item-old-price+.item-price {
+    margin-top: 8px;
+}
+
+.item-price:after {
     content: '';
     width: 0;
     height: 0;
@@ -1151,8 +1163,9 @@ bbc6
 .action-btn>.buy {
     line-height: 18px;
     background-color: #63a63e;
-    border-bottom-color: #367315;
+    border: none;
     position: relative;
+    box-shadow: inset 0px -3px 0px 0px #367315;
 }
 
 .buy:before {
@@ -1205,7 +1218,7 @@ bbc6
     display: block;
 }
 .item:hover {
-    box-shadow: 0 10px 25px 0px #333333;
+    box-shadow: 0 10px 25px 0px #293449;
 }
 
 /*
@@ -1237,7 +1250,7 @@ bbc6
 }
 
 .brand-item:hover {
-    box-shadow: 0 5px 20px 0px grey;
+    box-shadow: 0 5px 20px 0px #293449;
 }
 
 .brand-item:active {
@@ -1268,6 +1281,8 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
 
 .services-caption+p {
     line-height: 24px;
+    font-size: 13px;
+    font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .tabs {
@@ -1343,12 +1358,14 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
     padding: 0;
     margin-bottom: 20px;
     font-size: 35px;
+    font-weight: bold;
 }
 
 .tab-list>p {
     color: #293449;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 13px;
+    font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .credit-request {
@@ -1365,20 +1382,20 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
 
 .tab-delivery {
     background-image: url(../image/bg-taber-image1.png);
-    background-position: 230px 25px;
+    background-position: right 100%;
     background-repeat: no-repeat;
 }
 
 .tab-garanty {
-    background-image: url(../imagebg-taber-image2.png);
-    background-position: 355px 20px;
+    background-image: url(../image/bg-taber-image2.png);
+    background-position: right 100%;
     background-repeat: no-repeat;
     background-size: 50%;
 }
 
 .tab-credit {
     background-image: url(../image/bg-taber-image3.png);
-    background-position: 200px 0px;
+    background-position: right 100%;
     background-repeat: no-repeat;
     background-size: 70%;
 }
@@ -1468,7 +1485,7 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
     width: 940px;
     height: 447px;
     border-radius: 5px;
-    box-shadow: 5px 5px 30px 0px #333333;
+    box-shadow: 5px 5px 30px 0px #293449;
     position: relative;
     z-index: 200;
     margin: 0 auto;
@@ -1731,11 +1748,19 @@ _$$$$__$$__$$___$$___$$__$$_$$$$$$__$$$$___$$$$
     vertical-align: top;
 }
 
+.crumb:not(:last-child):after {
+    content: '\3e';
+    font-family: 'symbols-technomart';
+    color: #dadde2;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
 .crumb>a,
 .crumb>span {
     color: #000;
     text-decoration: none;
-    padding: 5px 0px 5px 0px;
     text-transform: uppercase;
     font-size: 14px;
     font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -1744,6 +1769,7 @@ _$$$$__$$__$$___$$___$$__$$_$$$$$$__$$$$___$$$$
 
 .crumb>.icon-home {
     margin: 0;
+    font-size: 16px;
 }
 
 .crumb>.icon-home,
@@ -1751,9 +1777,6 @@ _$$$$__$$__$$___$$___$$__$$_$$$$$$__$$$$___$$$$
     color: #c1c6ce;
 }
 
-.crumb>.icon-right {
-    font-size: 14px;
-}
 /*
     =====================================
 
@@ -1886,12 +1909,12 @@ _$$$$__$$__$$___$$___$$__$$_$$$$$$__$$$$___$$$$
     border: none;
 }
 
-.criterion-wrap>a:hover {
+.criterion-wrap>a:not(.active):hover {
     border-bottom: 1px solid #ee3643;
     color: #000;
 }
 
-.shooter-wrap>a:hover {
+.shooter-wrap>a:not(.active):hover {
     color: #000;
 }
 
@@ -2308,10 +2331,10 @@ form label {
     display: inline-block;
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 13px;
+    margin-bottom: 7px;
     font-weight: bold;
     font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin-top: 10px;
+    margin-top: 18px;
     vertical-align: top;
 }
 
@@ -2337,11 +2360,11 @@ form label {
 }
 
 .form-group-comment>textarea {
-    margin-bottom: 37px;
+    margin-bottom: 34px;
     width: 438px;
-    height: 93px;
+    height: 99px;
     resize: none;
-    padding-top: 13px;
+    padding-top: 7px;
 }
 
 .form-btn, .confirm-btn {
@@ -2433,24 +2456,65 @@ form label {
 
 .popup-show {
     display: block;
-    animation: scale 0.8s;
     -webkit-animation: scale 0.8s;
+    -o-animation: scale 0.8s;
+    -ms-animation: scale 0.8s;
+    -moz-animation: scale 0.8s;
+    animation: scale 0.8s;
 }
 
 @keyframes scale {
     0% {
-        transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
 @-webkit-keyframes scale {
     0% {
-        transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
     }
     100% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
+
+@-o-keyframes scale {
+    0% {
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@-moz-keyframes scale {
+    0% {
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@-ms-keyframes scale {
+    0% {
+        -webkit-transform: scale(0.1);
+                transform: scale(0.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
