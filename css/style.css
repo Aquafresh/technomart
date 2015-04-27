@@ -1089,6 +1089,26 @@ bbc6
     line-height: 20px;
 }
 
+.img-container {
+    width: 218px;
+    height: 164px;
+    position: relative;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+
 .item-old-price {
     display: block;
     color: #999;
@@ -1243,6 +1263,20 @@ bbc6
     border: 1px solid #e5e5e5;
     margin-right: 20px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.brand-item a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 
 .brand-item:nth-child(4n) {
