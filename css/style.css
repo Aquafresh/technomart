@@ -2497,6 +2497,11 @@ form label {
     animation: scale 0.8s;
 }
 
+.map-hidden {
+   display: block;
+   visibility: hidden;
+}
+
 @keyframes scale {
     0% {
         -webkit-transform: scale(0.1);
