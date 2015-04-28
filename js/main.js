@@ -50,8 +50,4 @@ var exit_confirm = document.querySelector(".exit-confirm");
 var maph = document.querySelector('.map-hidden');
   setTimeout(function() {
    maph.classList.remove('map-hidden');
-<<<<<<< HEAD:js/main.js
   }, 1000);
-=======
-  }, 1000);
->>>>>>> d1c6aaedf86e3d8ae9b5e85b33bd19fcb45d21ab:js/popup.js
