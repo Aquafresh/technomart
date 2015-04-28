@@ -265,6 +265,8 @@ ul {
     font-size: 14px;
     text-decoration: none;
     font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    height: 38px;
+    min-width: 135px;
 }
 
 .btn-transparent {
@@ -275,8 +277,6 @@ ul {
     text-decoration: none;
     margin-left: 23px;
     line-height: 18px;
-    width: 135px;
-    height: 38px;
     vertical-align: top;
     text-align: center;
     line-height: 38px;
@@ -311,20 +311,23 @@ ul {
 
 .btn-carousel {
     position: absolute;
-    padding-top: 12px;
-    padding-right: 45px;
-    padding-bottom: 8px;
-    padding-left: 49px;
+    padding-right: 30px;
+    padding-left: 30px;
     bottom: 27px;
     left: 25px ;
     line-height: 18px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .btn-normal {
     margin-top: 20px;
-    padding: 11px 44px;
+    padding-right: 42px;
+    padding-left: 42px;
     display: inline-block;
     vertical-align: top;
+    line-height: 38px;
+    text-align: center;
 }
 
 .btn-wide {
@@ -333,24 +336,25 @@ ul {
     margin-top: 25px;
     margin-right: 24px;
     width: 253px;
-    min-height: 38px;
     text-align: center;
 }
 
 .btn-popup {
-    padding: 11px 61px;
+    width: 300px;
     display: inline-block;
+    text-align: center;
     vertical-align: top;
+    line-height: 38px;
 }
 
 .confirm-btn>.btn-red {
-    line-height: 18px;
+    line-height: 38px;
     margin-left: 80px;
     margin-right: 16px;
 }
 
 .confirm-btn>.btn-white {
-    line-height: 18px;
+    line-height: 38px;
     margin-right: 78px;
 }
 
@@ -379,6 +383,10 @@ header-top-block START bbc3
 
 .header-bottom-block {
     background-color: #f1f5f7;
+}
+
+.tool-menu {
+    height: 42px;
 }
 
 .tool-left-side {
@@ -432,14 +440,12 @@ header-top-block START bbc3
     width: 45px;
     text-align: center;
     height: 42px;
-    box-sizing: border-box;
 }
 
 .search-header-form {
     width: 270px;
     float: right;
     height: 42px;
-    box-sizing: border-box;
 }
 
 .icon-search {
@@ -479,15 +485,15 @@ header-top-block START bbc3
 
 .bookmark {
     float: left;
-    padding-top: 10px;
     padding-right: 30px;
-    padding-bottom: 11px;
     padding-left: 44px;
     display: inline-block;
     background-color: #293449;
     position: relative;
     text-decoration: none;
     vertical-align: top;
+    height: 42px;
+    line-height: 42px;
 }
 
 .bookmark-text {
@@ -508,15 +514,15 @@ header-top-block START bbc3
 .bookmark-counter {
     position: absolute;
     color: #fff;
-    top: 11px;
+    top: 0px;
     right: 17px;
 }
 
 .shop-cart {
     float: left;
-    padding-top: 10px;
     padding-right: 42px;
-    padding-bottom: 11px;
+    height: 42px;
+    line-height: 42px;
     padding-left: 60px;
     position: relative;
     background-color: #293449;
@@ -542,7 +548,7 @@ header-top-block START bbc3
 .shop-cart-counter {
     position: absolute;
     color: #fff;
-    top: 11px;
+    top: 0px;
     right: 29px;
 }
 
@@ -941,6 +947,7 @@ bbc5
     color: #fff;
     font-size: 25px;
     margin-right: 100px;
+
 }
 
 .bar-stuff {
@@ -1041,7 +1048,7 @@ bbc6
 
 .popular-block-header {
     background-color: #f7f3ec;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     margin-top: 20px;
 }
 
@@ -1173,15 +1180,13 @@ bbc6
     width: 126px;
     margin: 0 auto;
     margin-bottom: 8px;
-    padding-top: 7px;
-    padding-bottom: 7px;
     padding-left: 3px;
     border: 3px solid #63a63e;
     text-decoration: none;
 }
 
 .action-btn>.buy {
-    line-height: 18px;
+    line-height: 38px;
     background-color: #63a63e;
     border: none;
     position: relative;
@@ -1193,8 +1198,8 @@ bbc6
     text-transform: none;
     font-family: 'symbols-technomart';
     position: absolute;
-    top: 7px;
-    left: 10px;
+    top: -2px;
+    left: 13px;
     color: #92c178;
 }
 
@@ -1203,11 +1208,10 @@ bbc6
     color: #32425c;
     font-weight: normal;
     font-size: 14px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-    line-height: 18px;
+    line-height: 34px;
     text-transform: uppercase;
     background-color: #fff;
+    box-sizing: border-box;
 }
 
 .action-btn>.buy:hover {
@@ -1238,7 +1242,7 @@ bbc6
     display: block;
 }
 .item:hover {
-    box-shadow: 0 10px 25px 0px #293449;
+    box-shadow: 0 5px 20px 0px rgba(41,52,73,0.5);
 }
 
 /*
@@ -1284,7 +1288,7 @@ bbc6
 }
 
 .brand-item:hover {
-    box-shadow: 0 5px 20px 0px #293449;
+    box-shadow: 0 5px 20px 0px rgba(41,52,73,0.5);
 }
 
 .brand-item:active {
@@ -1311,6 +1315,9 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
     color: #000;
     display: inline-block;
     vertical-align: top;
+    font-size: 30px;
+    line-height: 24px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .services-caption+p {
@@ -1350,7 +1357,8 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
     border-bottom: 1px solid #293449;
     border-top: 1px solid #405069;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: bold;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .tabs-btn>a:hover {
@@ -1391,8 +1399,11 @@ _$$$$__$$$$$__$$__$$___$$___$$$$$$__$$$$__$$$$$___$$$$
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 36px;
     font-weight: bold;
+    line-height: 24px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #32425c;
 }
 
 .tab-list>p {
@@ -1463,6 +1474,9 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
 
 .company-info>h3 {
     margin-bottom: 25px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    color: #000;
 }
 
 .company-info>ul {
@@ -1471,15 +1485,16 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
 
 .company-info>p {
     line-height: 24px;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 22px;
+    font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .list-company>li {
     line-height: 24px;
     font-size: 18px;
-    font-weight: bold;
     margin-bottom: 15px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .list-company>li:before {
@@ -1502,6 +1517,9 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
 
 .contact>h3 {
     margin-bottom: 28px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 24px;
 }
 
 .map-img {
@@ -1511,7 +1529,9 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
 }
 
 .contact>p {
-    line-height: 22px;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .map-wide-img {
@@ -1519,7 +1539,7 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
     width: 940px;
     height: 447px;
     border-radius: 5px;
-    box-shadow: 5px 5px 30px 0px #293449;
+    box-shadow: 5px 5px 30px 0px #231f20;
     position: relative;
     z-index: 200;
     margin: 0 auto;
@@ -1536,6 +1556,8 @@ _$$$$___$$$$__$$___$_$$_____$$__$$_$$__$$_$$$$$___$$$$_________$$___$_$$__$$_$$
     height: 25px;
     width: 5px;
     display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -1839,10 +1861,13 @@ _$$$$__$$__$$___$$___$$__$$_$$$$$$__$$$$___$$$$
     vertical-align: top;
     color: #000;
     margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 24px;
+    font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .item-info-block>p {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 69px;
     line-height: 24px;
     display: inline-block;
@@ -2366,7 +2391,6 @@ form label {
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 7px;
-    font-weight: bold;
     font-family: 'Cuprum', Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 18px;
     vertical-align: top;
@@ -2384,6 +2408,8 @@ form label {
     border-radius: 3px;
     padding-left: 16px;
     margin-bottom: 13px;
+    font-size: 13px;
+    line-height: 18px;
     font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -2467,16 +2493,10 @@ form label {
 }
 
 .confirm-btn>a {
-    text-decoration: none;
     display: inline-block;
-    width: 220px;
-    border-radius: 3px;
     vertical-align: top;
-    padding: 10px 0;
-    text-align: center;
     margin-top: 37px;
     margin-bottom: 37px;
-    text-transform: uppercase;
 }
 
 
@@ -2495,6 +2515,11 @@ form label {
     -ms-animation: scale 0.8s;
     -moz-animation: scale 0.8s;
     animation: scale 0.8s;
+}
+
+.map-hidden {
+   display: block;
+   visibility: hidden;
 }
 
 @keyframes scale {
